@@ -1,45 +1,223 @@
 <html>
-  <head>
-    <style>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .wrap{
+      width: 450px;
+      height: 380px;
+      text-align: center;
+      padding: 2px;
+      font-size: 23px;
+      background-color: #fffff0;
+      border-radius: 12px;
+      color: green;
+      box-shadow: 0 0 12px;
+      margin: 10px;
+    }
+    .wrap:hover{
+      background-color:  #dd8d04;
+    }
+    .img-class{
+      height: 80%;
+      padding-bottom: 5px;
+      border-radius: 12px;
+    }
+    a{
+      text-decoration: none;
+    }
+    .classes{
+      width: 100%;
+      margin-top: 23px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .wrap-of-all-results{
+      width: 87%;
+      padding: 20px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: #dd8d04;
+      margin-top: 20px;
+      text-align: center;
+      text-anchor: none;
+      box-shadow: 0 0 15px;
+      margin-top: 30px;
+    }
+    .allres{
+      text-align: center;
+      color:  white;
+      text-decoration: none;
+      font-size: 30px;
+    }
+    img{
+      width: 100%;
+    }
+    h2{
+      text-align: center;
+    }
+    body{
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: linear-gradient(to left bottom, #64ff9d, #90ff9a, #b0ff9a, #caff9f, #e0ffa6, #ecf296, #f6e48b, #ffd684, #ffb276, #ff868c, #ff61be, #ee62ff);
+    }
+    header{
+      background-color: #7d148b;
+      padding: 15px;
+      color: white;
+      font-size:  33px;
+      text-align: center;
+    }
+    footer{
+      background-color: #7d148b;
+      padding: 15px;
+      color: white;
+      font-size:  15px;
+      margin-top: 100px;
+    }
+    body{
+      margin: 0;
+    }
+
+    @media (max-width: 1800px){
       .wrap{
-       width: 32.3%;
-       height: 50%;
-       float: left;
-       text-align: center;
-       padding: 2px;
-       font-size: 23px;
+        width: 400px;
+        height: 323px;
       }
-      .wrap:hover{
-        border-radius: 12px;
-        padding: 8px;
-        background-color: #fffff0;
+    }
+    @media (max-width: 1500px){
+      .wrap{
+        width: 350px;
+        height: 303px;
       }
-      a{
-       text-decoration: none;
-       color: blue; 
+    }
+
+    @media (max-width: 1200px){
+      .wrap{
+        width: 310px;
+        height: 289px;
       }
-      img{
-       width: 100%;
-       height: auto; 
+    }
+    @media (max-width: 1000px){
+      .wrap{
+        width: 250px;
+        height: 247px;
       }
-      h2{
-       text-align: center; 
+      header{
+        font-size: 25px;
       }
-      body{
-        background-repeat: no-repeat;
-        background-size: 100%; 
-        background-image: linear-gradient(to left bottom, #64ff9d, #90ff9a, #b0ff9a, #caff9f, #e0ffa6, #ecf296, #f6e48b, #ffd684, #ffb276, #ff868c, #ff61be, #ee62ff);
+      .allres{
+        font-size: 21px;
       }
-    </style>
-    <link rel="shortcut icon" href="fox_icon.png" type="image/png">
-    <title>Результаты сессии информатиков 7-9 класс</title>
-  </head>
-  <body>
-    <h2>Результаты сессии информатиков 7-9 класс</h2>
-    <a href="res9.html"><div class="wrap"><img width='200px' height='150px' src="lol.png">
-      </img></br>Первый год обучения</div></a>
-<div style="width: 100%;">
-    <a href="res9_all.html" style="font-size: 24px;">Результаты за все сессии</a>
+    }
+
+    @media (max-width: 800px){
+      .wrap{
+        width: 180px;
+        height: 170px;
+      }
+      header{
+        font-size: 25px;
+      }
+      .allres{
+        font-size: 23px;
+      }
+    }
+
+    @media (max-width: 600px){
+      .wrap{
+        width: 450px;
+        height: 347px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 500px){
+      .wrap{
+        width: 380px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+      header{
+        font-size: 23px;
+      }
+      .allres{
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 400px){
+      .wrap{
+        width: 350px;
+        height: 290px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+      header{
+        font-size: 20px;
+      }
+      .allres{
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 380px){
+      .wrap{
+        width: 340px;
+        height: 250px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 360px){
+      .wrap{
+        width: 320px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+      header{
+        font-size: 18px;
+      }
+      .allres{
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 350px){
+      .wrap{
+        width: 300px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 300px){
+      .wrap{
+        width: 270px;
+      }
+      .classes{
+        flex-direction: column;
+      }
+    }
+  </style>
+  <link rel="shortcut icon" href="fox_icon.png" type="image/png">
+  <title>Результаты сессии по информатике</title>
+</head>
+<body>
+<header>Результаты сессии по информатике</header>
+<div class="classes">
+  <a href="res9.html"><div class="wrap"><img class="img-class" src="pg.jpg">
+  </img></br><b>Алгоритмы и структуры данных</b></div></a>
+  <a href="res10.html"><div class="wrap"><img class="img-class" src="floppa.jpg">
+  </img></br><b>Информатика и программирование</b></div></a>
 </div>
-  </body>
+<div class="wrap-of-all-results">
+  <a href="all" class="allres">Результаты <strong style="color: #7d148b;">за все сессии</strong> можно посмотреть тут!</a>
+</div>
+
+</body>
 </html>
